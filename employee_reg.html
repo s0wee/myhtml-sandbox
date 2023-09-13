@@ -105,5 +105,27 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+<script>
+        const form = document.getElementById('registration-form');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+ 
+            const lastName = document.getElementById('last_name').value;
+            const firstName = document.getElementById('first_name').value;
+            const middleName = document.getElementById('middle_name').value;
+            const birthdate = document.getElementById('birthdate').value;
+            const department = document.getElementById('department').value;
+            const office = document.getElementById('office').value;
+
+
+            console.log('Last Name:', lastName);
+            console.log('First Name:', firstName);
+            console.log('Middle Name:', middleName);
+            console.log('Birthdate:', birthdate);
+            console.log('Department:', department);
+            console.log('Office:', office);
+        });
+    </script>
 </body>
 </html>
